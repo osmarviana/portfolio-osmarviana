@@ -1,0 +1,348 @@
+/* Estilização geral */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1440px;
+  background-color: var(--cor-primaria);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+main {
+  width: 100vw;
+}
+
+/* Estilização do cabeçalho */
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem;
+  position: fixed;
+  z-index: 1;
+  background-color: var(--cor-primaria);
+}
+
+header h1 {
+  color: var(--cor-secundaria);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 2rem;
+  color: #fff;
+}
+
+header nav a:hover {
+  color: var(--cor-secundaria);
+}
+
+/* Estilização da seção de sobre */
+
+#sobre {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 2rem 2rem;
+}
+
+#sobre h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+.box-sobre {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 1.5rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 0.2rem solid var(--cor-secundaria);
+}
+
+.box-sobre img {
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 1px 2px 3px black;
+}
+
+.box-sobre p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.box-sobre p b {
+  color: #75fcaf;
+}
+
+/* Estilização do habilidades */
+
+#sobre h3 {
+  margin-bottom: 20px;
+}
+
+.container-habilidades {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-habilidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  gap: 0.2rem;
+}
+
+.box-habilidades .hard-skills,
+.box-habilidades .soft-skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid var(--cor-secundaria);
+  border-radius: 0.5rem;
+}
+
+.box-habilidades .img-content {
+  width: 90px;
+  height: 100px;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  gap: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-content h3 {
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+}
+
+/* Estilização da seção de projetos */
+
+#projetos {
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+#projetos h2 {
+  align-self: flex-start;
+  margin-bottom: 2rem;
+}
+
+.container-projetos {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.projeto {
+  border: 0.1rem solid var(--cor-secundaria);
+  border-radius: 0.5rem;
+  width: 24rem;
+  height: 30rem;
+  margin-bottom: 2rem;
+  padding: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.projeto img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.projeto .info-projeto {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projeto .projetos-titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+.projeto p {
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.btn-box {
+  display: flex;
+}
+
+.projeto a {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-alternativa);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  margin: 1rem;
+  border-radius: 0.3rem;
+  transition: opacity 0.3s ease;
+}
+
+.projeto a:hover {
+  opacity: 0.8;
+}
+
+.projeto .btn-02 {
+  background-color: var(--cor-alternativa);
+  color: var(--cor-secundaria);
+}
+
+/* Estilização do contato */
+
+#contato {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#contato h2 {
+  align-self: flex-start;
+  margin-bottom: 2rem;
+}
+
+.container-contato {
+  width: 100%;
+  height: 100vh;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-contato .form {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.3rem;
+  padding: 1.5rem;
+  gap: 0.5rem;
+  background-color: #03fa6e;
+}
+
+.container-contato .input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+  color: var(--cor-alternativa);
+}
+
+.container-contato .textarea {
+  width: 100%;
+  height: 5rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+  resize: none;
+  color: var(--cor-alternativa);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--cor-alternativa);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.container-contato .input-btn {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: var(--cor-alternativa);
+  color: var(--cor-secundaria);
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.container-contato .input-btn:hover {
+  opacity: 0.8;
+}
+
+.link-contato {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.link-contato .img-contato {
+  width: 30px;
+  transition: all 0.3s ease;
+}
+
+.link-contato .img-contato:hover {
+  transform: scale(1.1);
+}
+
+/* Estilização do rodapé */
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer p {
+  color: var(--cor-secundaria);
+  font-size: 0.8rem;
+}

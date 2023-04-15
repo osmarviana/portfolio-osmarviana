@@ -1,0 +1,25 @@
+@media (max-width: 1024px) {
+  #sobre {
+    /* height: 120vh; */
+  }
+
+  .container-habilidades {
+    justify-content: center;
+  }
+
+  #projetos {
+    /* height: 220vh; */
+  }
+}
+
+@media (max-width: 768px) {
+  #contato {
+    /* height: 120vh; */
+  }
+}
+
+@media (max-width: 425px) {
+  #sobre {
+    /* height: 100vh; */
+  }
+}
