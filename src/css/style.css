@@ -1,66 +1,79 @@
-/* Estilização geral */
+/* Estilização geral  */
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  /* max-width: 1440px; */
-  /* height: auto; */
   background-color: var(--cor-primaria);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
 }
 
 .main {
-  /* width: 100vw; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 30px;
 }
 
 .section-title {
-  font-size: 1.7rem;
+  font-size: 28px;
   margin-bottom: 20px;
   align-self: flex-start;
+  user-select: none;
 }
 
 /* Estilização do cabeçalho */
 
 .header {
-  width: 100%;
+  padding: 15px 30px;
+}
+
+.nav-menu {
+  min-height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 30px;
-  position: fixed;
-  z-index: 1;
-  background-color: var(--cor-primaria);
 }
 
-.header .name-profile {
+.logo {
   color: var(--cor-secundaria);
-  font-size: 2.5rem;
+  font-size: 36px;
   font-weight: bold;
+  user-select: none;
 }
 
-.header .nav-menu .menu {
+.menu {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-right: 60px;
-  gap: 50px;
+  gap: 60px;
 }
 
-.header .nav-menu .nav-link .link-menu {
-  font-size: 1.2rem;
+.link-menu {
+  font-size: 20px;
   font-weight: 600;
   color: #fff;
+  user-select: none;
 }
 
-.header .nav-menu .nav-link .link-menu:hover {
+.link-menu:hover {
   color: var(--cor-secundaria);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  margin: 5px auto;
+  background-color: var(--cor-secundaria);
 }
 
 /* Estilização da seção de sobre */
@@ -71,7 +84,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 80px 30px;
+  /* padding: 30px 0; */
 }
 
 .about-box {
@@ -80,19 +93,23 @@ body {
   gap: 20px;
   padding: 15px;
   margin-bottom: 25px;
-  border-bottom: 0.2rem solid var(--cor-secundaria);
+  border-bottom: 2px solid var(--cor-secundaria);
 }
 
 .about-box .profile-img {
-  width: 220px;
+  width: 100%;
+  max-width: 250px;
   border-radius: 50%;
   box-shadow: 1px 2px 3px black;
   margin-bottom: 15px;
+  user-select: none;
 }
 
 .about-box .profile-info {
-  font-size: 1.5rem;
+  font-size: 24px;
+  line-height: 34px;
   text-align: justify;
+  user-select: none;
 }
 
 .about-box .profile-info b {
@@ -108,11 +125,13 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  gap: 15px;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
 .skills-box {
-  width: 50%;
+  width: 100%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,10 +142,12 @@ body {
 .skills-container .soft-skills {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--cor-secundaria);
   border-radius: 5px;
+  user-select: none;
 }
 
 .skills-container .img-content {
@@ -144,18 +165,21 @@ body {
 .img-content .skill-img {
   align-items: center;
   width: 40px;
+  user-select: none;
 }
 
 .sub-section-title {
-  font-size: 1.5rem;
+  font-size: 22px;
   margin-bottom: 5px;
   text-align: center;
+  user-select: none;
 }
 
 .skill-name {
-  font-size: 0.8rem;
+  font-size: 14px;
   text-align: center;
   line-height: 18px;
+  user-select: none;
 }
 
 /* Estilização da seção de projetos */
@@ -166,25 +190,33 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 80px 30px;
+  margin-top: 30px;
+  /* padding: 100px 0; */
 }
 
 .projects-container {
-  width: 100%;
+  max-width: 100%;
+  width: 600px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 80px 30px;
+  padding: 30px 0;
 }
 
 .projects-container .project-nav {
-  width: 50%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .projects-container .project-ul {
-  width: 100%;
-  margin-top: 0;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-li {
@@ -195,6 +227,7 @@ body {
   border: 1px solid var(--cor-secundaria);
   border-radius: 5px;
   margin-bottom: 15px;
+  user-select: none;
 }
 
 .scale {
@@ -214,6 +247,7 @@ body {
 .project-resume {
   width: 100%;
   text-align: center;
+  user-select: none;
 }
 
 .more-info {
@@ -226,6 +260,7 @@ body {
   text-align: center;
   background-color: var(--cor-secundaria);
   cursor: pointer;
+  user-select: none;
   user-select: none;
 }
 
@@ -242,6 +277,7 @@ body {
   object-fit: cover;
   margin: 15px 0;
   padding: 0 5px;
+  user-select: none;
 }
 
 .project-info {
@@ -250,12 +286,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  user-select: none;
 }
 
 .project-description {
-  font-size: 1.2rem;
+  font-size: 20px;
   margin: 15px 5px;
   text-align: justify;
+  user-select: none;
 }
 
 .btn-box {
@@ -275,6 +313,7 @@ body {
   border-radius: 5px;
   text-align: center;
   transition: opacity 0.3s ease;
+  user-select: none;
 }
 
 .btn-02:hover,
@@ -295,17 +334,18 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 80px 30px;
+  /* padding: 80px 0; */
 }
 
 .contact-container {
-  width: 500px;
+  width: 100%;
+  max-width: 600px;
   gap: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 80px 30px;
+  padding: 30px 0;
 }
 
 .contact-form {
@@ -321,8 +361,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border-radius: 5px;
-  padding: 30px;
+  padding: 30px 20px;
   gap: 15px;
   background-color: #03fa6e;
 }
@@ -333,7 +374,7 @@ body {
   margin-bottom: 8px;
   border-radius: 5px;
   border: none;
-  font-size: 1rem;
+  font-size: 16px;
   color: var(--cor-alternativa);
 }
 
@@ -344,7 +385,7 @@ body {
   margin-bottom: 8px;
   border-radius: 5px;
   border: none;
-  font-size: 1rem;
+  font-size: 16px;
   color: var(--cor-alternativa);
   resize: none;
 }
@@ -368,7 +409,7 @@ input:focus {
   border-radius: 5px;
   background-color: var(--cor-alternativa);
   color: #fff;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: opacity 0.3s ease;
@@ -389,25 +430,9 @@ input:focus {
 .contact-link .contact-img {
   width: 30px;
   transition: all 0.3s ease;
+  user-select: none;
 }
 
 .contact-link .contact-img:hover {
   transform: scale(1.1);
-}
-
-/* Estilização do rodapé */
-
-.footer {
-  width: 100%;
-  height: 30px;
-  padding: 10px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer .footer-info {
-  color: var(--cor-secundaria);
-  font-size: 0.8rem;
 }

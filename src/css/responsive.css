@@ -1,50 +1,106 @@
-@media (max-width: 768px) {
-  .header {
-    justify-content: center;
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 10px;
+  }
+  /* menu hamburguer */
+
+  .hamburger {
+    display: block;
   }
 
-  .header .nav-menu .menu {
-    display: none;
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
   }
 
-  .about {
-    padding-top: 130px;
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu {
+    position: fixed;
+    left: -800px;
+    top: 80px;
+    gap: 0;
+    border-radius: 0 0 20px 20px;
+    background-color: var(--cor-primaria);
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  .nav-link {
+    margin: 16px 0;
+  }
+
+  .menu.active {
+    left: 0;
+  }
+
+  /* menu hamburguer */
+
+  .main {
+    padding: 80px 15px;
   }
 
   .about-box {
     flex-direction: column;
+    padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .section-title {
+    font-size: 24px;
   }
 
-  .about-box .profile-img {
-    width: 300px;
+  .logo {
+    font-size: 30px;
+  }
+
+  .about-box .profile-info {
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .skills-box {
-    width: 100%;
+    max-width: 400px;
   }
 
-  .skills-container .hard-skills,
-  .skills-container .soft-skills {
-    justify-content: space-around;
-  }
-
-  .projects-container .project-nav {
-    width: 100%;
-  }
-
-  .contact-container {
-    width: 100%;
-  }
-}
-
-@media (max-width: 425px) {
-  .contact-container {
+  .projects-container {
     width: 400px;
   }
+
+  .contact-container {
+    width: 370px;
+  }
+
+  .contact-form {
+    padding: 0 30px;
+  }
 }
 
+@media screen and (max-width: 375px) {
+  .logo {
+    font-size: 26px;
+  }
 
-@media (max-width: 375px) {
+  .about-box .profile-info {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .skills-box {
+    max-width: 350px;
+  }
+
+  .projects-container {
+    width: 350px;
+  }
+
   .contact-container {
     width: 320px;
   }
