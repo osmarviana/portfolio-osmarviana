@@ -2,30 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio - Osmar Viana Torres</title>
     <link rel="stylesheet" href="./src/css/variable.css" />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/responsive.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./src/img/favicon.ico"
+      type="image/x-icon"
+    />
   </head>
   <body>
-    <header>
-      <h1>Osmar Viana Torres</h1>
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
+    <header class="header">
+      <h1 class="name-profile">Osmar Viana Torres</h1>
+      <nav class="nav-menu">
+        <ul class="menu">
+          <li class="nav-link"><a class="link-menu" href="#about">Sobre</a></li>
+          <li class="nav-link">
+            <a class="link-menu" href="#projects">Projetos</a>
+          </li>
+          <li class="nav-link">
+            <a class="link-menu" href="#contact">Contato</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section id="sobre">
-        <h2>Sobre</h2>
-        <div class="box-sobre">
-          <img src="./src/img/foto-osmar-green.jpg" alt="Foto de Osmar" />
-          <p>
+    <main class="main">
+      <section class="about" id="about">
+        <h2 class="section-title">Sobre</h2>
+        <div class="about-box">
+          <img
+            class="profile-img"
+            src="./src/img/foto-osmar-green.jpg"
+            alt="Foto de Osmar"
+          />
+          <p class="profile-info">
             Olá, meu nome é <b>Osmar Viana Torres</b> sou
             <b>Desenvolvedor Web</b> e sou estudante do curso de
             <b>Análise e Desenvolvimento de Sistemas</b>. Tenho conhecimentos em
@@ -37,139 +53,109 @@
           </p>
         </div>
 
-        <h3>Habilidades</h3>
-        <div class="container-habilidades">
-          <div class="box-habilidades">
-            <h3>Hard Skills</h3>
+        <h2 class="section-title">Habilidades</h2>
+        <div class="skills-container">
+          <div class="skills-box">
+            <h3 class="sub-section-title">Hard Skills</h3>
             <div class="hard-skills">
               <div class="img-content">
-                <h3>JavaScript</h3>
+                <h3 class="skill-name">JavaScript</h3>
                 <img
-                  align="center"
-                  alt="Js"
-                  height="30"
-                  width="40"
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"
+                  class="skill-img"
+                  alt="Ícone do JavaScript"
+                  src="./src/img/hardSkills/jsIcon.png"
                 />
               </div>
               <div class="img-content">
-                <h3>ReactJS</h3>
+                <h3 class="skill-name">ReactJS</h3>
                 <img
-                  align="center"
-                  alt="React"
-                  height="30"
-                  width="40"
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                  class="skill-img"
+                  alt="Ícone do React"
+                  src="./src/img/hardSkills/reactIcon.png"
                 />
               </div>
               <div class="img-content">
-                <h3>HTML</h3>
+                <h3 class="skill-name">HTML</h3>
                 <img
-                  align="center"
-                  alt="HTML"
-                  height="30"
-                  width="40"
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+                  class="skill-img"
+                  alt="Ícone do HTML"
+                  src="./src/img/hardSkills/htmlIcon.png"
                 />
               </div>
               <div class="img-content">
-                <h3>CSS</h3>
+                <h3 class="skill-name">CSS</h3>
                 <img
-                  align="center"
-                  alt="CSS"
-                  height="30"
-                  width="40"
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+                  class="skill-img"
+                  alt="Ícone do CSS"
+                  src="./src/img/hardSkills/cssIcon.png"
                 />
               </div>
               <div class="img-content">
-                <h3>Git</h3>
+                <h3 class="skill-name">Git</h3>
                 <img
-                  align="center"
-                  alt="Git"
-                  height="30"
-                  width="40"
-                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
+                  class="skill-img"
+                  alt="Ícone do Git"
+                  src="./src/img/hardSkills/gitIncon.png"
                 />
               </div>
               <div class="img-content">
-                <h3>GitHub</h3>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-brand-github-filled"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path
-                    d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z"
-                    stroke-width="0"
-                    fill="currentColor"
-                  />
-                </svg>
+                <h3 class="skill-name">GitHub</h3>
+                <img
+                  class="skill-img"
+                  src="./src/img/hardSkills/githubIcon.png"
+                  alt="Ícone do GitHub"
+                />
               </div>
             </div>
           </div>
-          <div class="box-habilidades">
-            <h3>Soft Skills</h3>
+          <div class="skills-box">
+            <h3 class="sub-section-title">Soft Skills</h3>
             <div class="soft-skills">
               <div class="img-content">
-                <h3>Trabalho em Equipe</h3>
+                <h3 class="skill-name">Trabalho em Equipe</h3>
                 <img
-                  align="center"
-                  width="40"
-                  src="./src/img/softSkill/teamWork.jpg"
+                  class="skill-img"
+                  src="./src/img/softSkills/teamWork.jpg"
                   alt="Imagem trabalho em equipe"
                 />
               </div>
               <div class="img-content">
-                <h3>Resolução de Conflitos</h3>
+                <h3 class="skill-name">Resolução de Conflitos</h3>
                 <img
-                  align="center"
-                  width="40"
-                  src="./src/img/softSkill/resolucaoConflitos.png"
+                  class="skill-img"
+                  src="./src/img/softSkills/resolucaoConflitos.png"
                   alt="Imagem resolução de conflitos"
                 />
               </div>
               <div class="img-content">
-                <h3>Inteligência Emocional</h3>
+                <h3 class="skill-name">Inteligência Emocional</h3>
                 <img
-                  align="center"
-                  width="40"
-                  src="./src/img/softSkill/inteligenciaEmocional.png"
+                  class="skill-img"
+                  src="./src/img/softSkills/inteligenciaEmocional.png"
                   alt="Imagem intiligência emocional"
                 />
               </div>
               <div class="img-content">
-                <h3>Liderança</h3>
+                <h3 class="skill-name">Liderança</h3>
                 <img
-                  align="center"
-                  width="40"
-                  src="./src/img/softSkill/lideranca.png"
+                  class="skill-img"
+                  src="./src/img/softSkills/lideranca.png"
                   alt="Imagem liderança"
                 />
               </div>
               <div class="img-content">
-                <h3>Proatividade</h3>
+                <h3 class="skill-name">Proatividade</h3>
                 <img
-                  align="center"
-                  width="40"
-                  src="./src/img/softSkill/proatividade.png"
+                  class="skill-img"
+                  src="./src/img/softSkills/proatividade.png"
                   alt="Imagem proatividade"
                 />
               </div>
               <div class="img-content">
-                <h3>Comunicação</h3>
+                <h3 class="skill-name">Comunicação</h3>
                 <img
-                  align="center"
-                  width="40"
-                  src="./src/img/softSkill/comunicacao.jpg"
+                  class="skill-img"
+                  src="./src/img/softSkills/comunicacao.jpg"
                   alt="Imagem comunicação"
                 />
               </div>
@@ -177,255 +163,264 @@
           </div>
         </div>
       </section>
-      <section id="projetos">
-        <h2>Projetos</h2>
-        <div class="container-projetos">
-          <div class="projeto">
-            <img
-              src="./src/img/projetos/projetoRh.gif"
-              alt="Gif da página do Busca RH"
-            />
-            <div class="info-projeto">
-              <h3 class="projetos-titulo">Busca RH</h3>
-              <p>
-                Projeto criado com HTML, CSS e JavaScript, oferece interface
-                intuitiva onde o usuário pode realizar cadastro de currículo,
-                buscar por vagas, acessar notícias e entrar em contato com a
-                empresa.
-              </p>
-              <div class="btn-box">
-                <a
-                  class="btn-01"
-                  href="https://github.com/osmarviana/projetoRH"
-                  target="_blank"
-                >
-                  Ver projeto
-                </a>
-                <a
-                  class="btn-02"
-                  href="https://osmarviana.github.io/projetoRH/"
-                  target="_blank"
-                >
-                  Acessar deploy
-                </a>
-              </div>
-            </div>
-          </div>
+      <section class="projects" id="projects">
+        <h2 class="section-title">Projetos</h2>
+        <div class="projects-container" id="accordion">
+          <nav class="project-nav">
+            <ul class="project-ul">
+              <li class="project-li">
+                <div class="project-list">
+                  <a class="more-info">Projeto: Busca RH</a>
+                </div>
+                <div class="more-info-box">
+                  <p class="project-description">
+                    Projeto criado com HTML, CSS e JavaScript, oferece interface
+                    intuitiva onde o usuário pode realizar cadastro de
+                    currículo, buscar por vagas, acessar notícias e entrar em
+                    contato com a empresa.
+                  </p>
+                  <img
+                    class="project-img"
+                    src="./src/img/projetos/projetoRh.gif"
+                    alt="Gif da página do Busca RH"
+                  />
+                  <div class="btn-box">
+                    <a
+                      class="btn-01"
+                      href="https://github.com/osmarviana/projetoRH"
+                      target="_blank"
+                    >
+                      Ver projeto
+                    </a>
+                    <a
+                      class="btn-02"
+                      href="https://osmarviana.github.io/projetoRH/"
+                      target="_blank"
+                    >
+                      Acessar deploy
+                    </a>
+                  </div>
+                </div>
+              </li>
 
-          <div class="projeto">
-            <img
-              src="./src/img/projetos/apiGithub.gif"
-              alt="Gif da página do API do GitHub"
-            />
-            <div class="info-projeto">
-              <h3 class="projetos-titulo">API do GitHub</h3>
-              <p>
-                API para busca de usuários e repositórios do GitHub,
-                desenvolvida em JavaScript. Permite a busca por nome de usuário,
-                com resultados organizados por relevância. O projeto foi criado
-                com base em consumo de API com fetch.
-              </p>
-              <div class="btn-box">
-                <a
-                  class="btn-01"
-                  href="https://github.com/osmarviana/apiGitHub"
-                  target="_blank"
-                >
-                  Ver projeto
-                </a>
-                <a
-                  class="btn-02"
-                  href="https://osmarviana.github.io/apiGitHub/"
-                  target="_blank"
-                >
-                  Acessar deploy
-                </a>
-              </div>
-            </div>
-          </div>
+              <li class="project-li">
+                <div class="project-list">
+                  <a class="more-info">Projeto: API do GitHub</a>
+                </div>
+                <div class="more-info-box">
+                  <p class="project-description">
+                    API para busca de usuários e repositórios do GitHub,
+                    desenvolvida em JavaScript. Permite a busca por nome de
+                    usuário, com resultados organizados por relevância. O
+                    projeto foi criado com base em consumo de API com fetch.
+                  </p>
+                  <img
+                    class="project-img"
+                    src="./src/img/projetos/apiGithub.gif"
+                    alt="Gif da página do API do GitHub"
+                  />
+                  <div class="btn-box">
+                    <a
+                      class="btn-01"
+                      href="https://github.com/osmarviana/apiGitHub"
+                      target="_blank"
+                    >
+                      Ver projeto
+                    </a>
+                    <a
+                      class="btn-02"
+                      href="https://osmarviana.github.io/apiGitHub/"
+                      target="_blank"
+                    >
+                      Acessar deploy
+                    </a>
+                  </div>
+                </div>
+              </li>
 
-          <div class="projeto">
-            <img
-              src="./src/img/projetos/adviceGenerator.gif"
-              alt="Gif da página do Gerador de conselhos"
-            />
-            <div class="info-projeto">
-              <h3 class="projetos-titulo">Gerador de conselhos</h3>
-              <p>
-                Site para gerar conselhos aleatórios, desenvolvido em HTML, CSS
-                e JavaScript. Oferece conselhos em diferentes categorias, O
-                projeto foi criado com base em consumo de API com fetch.
-              </p>
-              <div class="btn-box">
-                <a
-                  class="btn-01"
-                  href="https://github.com/osmarviana/advice-generator"
-                  target="_blank"
-                >
-                  Ver projeto
-                </a>
-                <a
-                  class="btn-02"
-                  href="https://osmarviana.github.io/advice-generator/"
-                  target="_blank"
-                >
-                  Acessar deploy
-                </a>
-              </div>
-            </div>
-          </div>
+              <li class="project-li">
+                <div class="project-list">
+                  <a class="more-info">Projeto: Gerador de conselhos</a>
+                </div>
+                <div class="more-info-box">
+                  <p class="project-description">
+                    Site para gerar conselhos aleatórios, desenvolvido em HTML,
+                    CSS e JavaScript. Oferece conselhos em diferentes
+                    categorias, O projeto foi criado com base em consumo de API
+                    com fetch.
+                  </p>
+                  <img
+                    class="project-img"
+                    src="./src/img/projetos/adviceGenerator.gif"
+                    alt="Gif da página do Gerador de conselhos"
+                  />
+                  <div class="btn-box">
+                    <a
+                      class="btn-01"
+                      href="https://github.com/osmarviana/advice-generator"
+                      target="_blank"
+                    >
+                      Ver projeto
+                    </a>
+                    <a
+                      class="btn-02"
+                      href="https://osmarviana.github.io/advice-generator/"
+                      target="_blank"
+                    >
+                      Acessar deploy
+                    </a>
+                  </div>
+                </div>
+              </li>
 
-          <div class="projeto">
-            <img
-              src="./src/img/projetos/escolaIngles.gif"
-              alt="Gif da página da Escola de Inglês"
-            />
-            <div class="info-projeto">
-              <h3 class="projetos-titulo">Escola de Inglês</h3>
-              <p>
-                Site para escola de inglês, desenvolvido em HTML e CSS. Trata-se
-                de uma landing page para divugação da escola e captação de novos
-                clientes. Oferece links para contato e preencimento de
-                formulário pré-matricula.
-              </p>
-              <div class="btn-box">
-                <a
-                  class="btn-01"
-                  href="https://github.com/osmarviana/escola-de-ingles"
-                  target="_blank"
-                >
-                  Ver projeto
-                </a>
-                <a
-                  class="btn-02"
-                  href="https://osmarviana.github.io/escola-de-ingles/"
-                  target="_blank"
-                >
-                  Acessar deploy
-                </a>
-              </div>
-            </div>
-          </div>
+              <li class="project-li">
+                <div class="project-list">
+                  <a class="more-info">Projeto: Escola de Inglês</a>
+                </div>
+                <div class="more-info-box">
+                  <p class="project-description">
+                    Site para escola de inglês, desenvolvido em HTML e CSS.
+                    Trata-se de uma landing page para divugação da escola e
+                    captação de novos clientes. Oferece links para contato e
+                    preencimento de formulário pré-matricula.
+                  </p>
+                  <img
+                    class="project-img"
+                    src="./src/img/projetos/escolaIngles.gif"
+                    alt="Gif da página da Escola de Inglês"
+                  />
+                  <div class="btn-box">
+                    <a
+                      class="btn-01"
+                      href="https://github.com/osmarviana/escola-de-ingles"
+                      target="_blank"
+                    >
+                      Ver projeto
+                    </a>
+                    <a
+                      class="btn-02"
+                      href="https://osmarviana.github.io/escola-de-ingles/"
+                      target="_blank"
+                    >
+                      Acessar deploy
+                    </a>
+                  </div>
+                </div>
+              </li>
 
-          <div class="projeto">
-            <img
-              src="./src/img/projetos/devFreela.gif"
-              alt="Gif da página do DevFreela"
-            />
-            <div class="info-projeto">
-              <h3 class="projetos-titulo">DevFreela</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Necessitatibus quos esse earum impedit at aspernatur provident,
-                eum delectus reiciendis debitis reprehenderit in totam autem
-                facilis! Laborum optio veritatis eos ad!
-              </p>
-              <div class="btn-box">
-                <a
-                  class="btn-01"
-                  href="https://github.com/osmarviana/devFreela"
-                  target="_blank"
-                >
-                  Ver projeto
-                </a>
-                <a
-                  class="btn-02"
-                  href="https://osmarviana.github.io/devFreela/"
-                  target="_blank"
-                >
-                  Acessar deploy
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="projeto">
-            <img
-              src="./src/img/projetos/lojaInsta.gif"
-              alt="Gif da página da loja virtual"
-            />
-            <div class="info-projeto">
-              <h3 class="projetos-titulo">Loja Virtual</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
-                eum ipsam nihil dolorem quidem, magnam veritatis animi mollitia,
-                corporis autem non molestiae laborum illum alias magni aut.
-                Facere, explicabo distinctio.
-              </p>
-              <div class="btn-box">
-                <a
-                  class="btn-01"
-                  href="https://github.com/osmarviana/projeto-madrishop"
-                  target="_blank"
-                >
-                  Ver projeto
-                </a>
-                <a
-                  class="btn-02"
-                  href="https://osmarviana.github.io/projeto-madrishop/"
-                  target="_blank"
-                >
-                  Acessar deploy
-                </a>
-              </div>
-            </div>
-          </div>
+              <li class="project-li">
+                <div class="project-list">
+                  <a class="more-info">Projeto: DevFreela</a>
+                </div>
+                <div class="more-info-box">
+                  <p class="project-description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Necessitatibus quos esse earum impedit at aspernatur
+                    provident, eum delectus reiciendis debitis reprehenderit in
+                    totam autem facilis! Laborum optio veritatis eos ad!
+                  </p>
+                  <img
+                    class="project-img"
+                    src="./src/img/projetos/devFreela.gif"
+                    alt="Gif da página do DevFreela"
+                  />
+                  <div class="btn-box">
+                    <a
+                      class="btn-01"
+                      href="https://github.com/osmarviana/devFreela"
+                      target="_blank"
+                    >
+                      Ver projeto
+                    </a>
+                    <a
+                      class="btn-02"
+                      href="https://osmarviana.github.io/devFreela/"
+                      target="_blank"
+                    >
+                      Acessar deploy
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
         </div>
       </section>
-      <section id="contato">
-        <div class="container-contato">
-          <div class="contato-box">
-            <h2>Contato</h2>
+      <section class="contact" id="contact">
+        <h2 class="section-title">Contato</h2>
+        <div class="contact-container">
+          <div class="contact-form">
             <form class="form">
-              <input class="input" type="text" id="nome" placeholder="Nome" />
+              <input
+                class="input"
+                type="text"
+                id="name"
+                placeholder="Seu nome"
+              />
               <input
                 class="input"
                 type="email"
                 id="email"
-                placeholder="Email"
+                placeholder="Seu email"
               />
-              <input class="input" type="tel" id="tel" placeholder="Telefone" />
+              <input
+                class="input"
+                type="tel"
+                id="tel"
+                placeholder="Seu telefone"
+              />
               <textarea
                 class="textarea"
-                name="mensagem"
-                id="mensagem"
-                placeholder="Mensagem"
+                name="message"
+                id="message"
+                placeholder="Sua mensagem"
               ></textarea>
               <input class="input-btn" type="submit" value="Enviar" />
             </form>
           </div>
-          <div class="link-contato">
+          <div class="contact-links">
             <a
+              class="contact-link"
               href="https://www.instagram.com/osmarvianatorres/"
               target="_blank"
               ><img
-                class="img-contato"
+                class="contact-img"
                 src="https://logopng.com.br/logos/instagram-40.svg"
                 target="_blank"
             /></a>
-            <a href="mailto:osmarvianatorres@gmail.com" target="_blank"
+            <a
+              class="contact-link"
+              href="mailto:osmarvianatorres@gmail.com"
+              target="_blank"
               ><img
-                class="img-contato"
+                class="contact-img"
                 src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202011emailgmaillogomailsocialsocialmedia-115677_115624.png"
                 target="_blank"
             /></a>
             <a
+              class="contact-link"
               href="https://www.linkedin.com/in/osmarvianatorres"
               target="_blank"
               ><img
-                class="img-contato"
+                class="contact-img"
                 src="https://logopng.com.br/logos/linkedin-83.svg"
                 target="_blank"
             /></a>
-            <a href="https://github.com/osmarviana" target="_blank"
+            <a
+              class="contact-link"
+              href="https://github.com/osmarviana"
+              target="_blank"
               ><img
-                class="img-contato"
+                class="contact-img"
                 src="https://cdn.icon-icons.com/icons2/2429/PNG/512/github_logo_icon_147285.png"
                 target="_blank"
             /></a>
-            <a href="https://contate.me/osmarviana" target="_blank"
+            <a
+              class="contact-link"
+              href="https://contate.me/osmarviana"
+              target="_blank"
               ><img
-                class="img-contato"
+                class="contact-img"
                 src="https://logopng.com.br/logos/whatsapp-33.png"
                 target="_blank"
             /></a>
@@ -433,8 +428,10 @@
         </div>
       </section>
     </main>
-    <footer>
-      <p class="footer">© Osmar Viana - Desenvolvedor Web</p>
-    </footer>
+    <!-- <footer class="footer">
+      <p class="footer-info">© Osmar Viana - Desenvolvedor Web</p>
+    </footer> -->
+
+    <script src="./src/js/project-more-info.js"></script>
   </body>
 </html>
