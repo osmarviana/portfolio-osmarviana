@@ -1,7 +1,12 @@
 @media screen and (max-width: 768px) {
   .main {
-    padding: 10px;
+    padding: 30px 15px;
   }
+
+  .header {
+    padding: 0 15px;
+  }
+
   /* menu hamburguer */
 
   .hamburger {
@@ -42,10 +47,6 @@
 
   /* menu hamburguer */
 
-  .main {
-    padding: 80px 15px;
-  }
-
   .about-box {
     flex-direction: column;
     padding: 15px 0;
@@ -57,8 +58,16 @@
     font-size: 24px;
   }
 
+  .header {
+    padding: 0 15px;
+  }
+
   .logo {
     font-size: 30px;
+  }
+
+  .main {
+    padding: 30px 15px;
   }
 
   .about-box .profile-info {
@@ -84,8 +93,16 @@
 }
 
 @media screen and (max-width: 375px) {
+  .header {
+    padding: 0 15px;
+  }
+
   .logo {
     font-size: 26px;
+  }
+
+  .main {
+    padding: 30px 15px;
   }
 
   .about-box .profile-info {
@@ -94,14 +111,56 @@
   }
 
   .skills-box {
-    max-width: 350px;
+    width: 350px;
   }
 
   .projects-container {
-    width: 350px;
+    width: 340px;
   }
 
   .contact-container {
     width: 320px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    padding: 0 15px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .main {
+    padding: 30px 15px;
+  }
+
+  .about-box .profile-info {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .skills-box {
+    width: 285px;
+    padding: 0;
+  }
+
+  .projects-container {
+    width: 270px;
+    padding: 0;
+  }
+
+  .project-description {
+    font-size: 16px;
+  }
+
+  .btn-box {
+    flex-direction: column;
+  }
+
+  .contact-container {
+    width: 250px;
+    padding: 0;
   }
 }
