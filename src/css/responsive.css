@@ -83,12 +83,21 @@
     width: 400px;
   }
 
-  .contact-container {
+  .contact-form {
     width: 370px;
+    padding: 0 5px;
+  }
+  
+}
+
+@media screen and (max-width: 390px) {
+  .projects-container {
+    width: 340px;
   }
 
   .contact-form {
-    padding: 0 30px;
+    width: 330px;
+    padding: 0 5px;
   }
 }
 
@@ -115,11 +124,12 @@
   }
 
   .projects-container {
-    width: 340px;
+    width: 320px;
   }
 
-  .contact-container {
-    width: 320px;
+  .contact-form {
+    width: 300px;
+    padding: 0 5px;
   }
 }
 
@@ -147,7 +157,7 @@
   }
 
   .projects-container {
-    width: 270px;
+    width: 285px;
     padding: 0;
   }
 
@@ -159,8 +169,8 @@
     flex-direction: column;
   }
 
-  .contact-container {
-    width: 250px;
+  .contact-form {
+    width: 260px;
     padding: 0;
   }
 }
