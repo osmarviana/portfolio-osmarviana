@@ -1,5 +1,3 @@
-/* Estilização geral  */
-
 html {
   scroll-behavior: smooth;
 }
@@ -24,8 +22,6 @@ body {
   align-self: flex-start;
   user-select: none;
 }
-
-/* Estilização do cabeçalho */
 
 .header {
   padding: 15px 30px;
@@ -76,15 +72,12 @@ body {
   background-color: var(--cor-secundaria);
 }
 
-/* Estilização da seção de sobre */
-
 .about {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding: 30px 0; */
 }
 
 .about-box {
@@ -108,15 +101,12 @@ body {
 .about-box .profile-info {
   font-size: 24px;
   line-height: 34px;
-  text-align: justify;
   user-select: none;
 }
 
 .about-box .profile-info b {
   color: #75fcaf;
 }
-
-/* Estilização do habilidades */
 
 .skills-container {
   width: 100%;
@@ -152,7 +142,7 @@ body {
 
 .skills-container .img-content {
   width: 90px;
-  height: 100px;
+  height: 120px;
   border-radius: 5px;
   padding: 5px;
   gap: 5px;
@@ -182,8 +172,6 @@ body {
   user-select: none;
 }
 
-/* Estilização da seção de projetos */
-
 .projects {
   width: 100%;
   display: flex;
@@ -191,7 +179,6 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 30px;
-  /* padding: 100px 0; */
 }
 
 .projects-container {
@@ -221,7 +208,7 @@ body {
 
 .project-li {
   width: 100%;
-  height: 36px;
+  height: 60px;
   overflow: hidden;
   padding: 10px;
   border: 1px solid var(--cor-secundaria);
@@ -231,7 +218,7 @@ body {
 }
 
 .scale {
-  height: 550px;
+  height: 580px;
 }
 
 .project-list {
@@ -292,7 +279,6 @@ body {
 .project-description {
   font-size: 20px;
   margin: 15px 5px;
-  text-align: justify;
   user-select: none;
 }
 
@@ -304,7 +290,7 @@ body {
 
 .btn-02,
 .btn-01 {
-  width: 120px;
+  width: 150px;
   background-color: var(--cor-secundaria);
   color: var(--cor-alternativa);
   font-weight: 500;
@@ -326,15 +312,12 @@ body {
   color: var(--cor-secundaria);
 }
 
-/* Estilização do contato */
-
 .contact {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding: 80px 0; */
 }
 
 .contact-container {
@@ -349,7 +332,7 @@ body {
 }
 
 .contact-form {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -363,7 +346,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  padding: 30px 20px;
+  padding: 30px 50px;
   gap: 15px;
   background-color: #03fa6e;
 }
@@ -402,6 +385,14 @@ input:focus {
   outline: 0;
 }
 
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 .contact-container .input-btn {
   width: 100%;
   padding: 10px;
@@ -435,4 +426,49 @@ input:focus {
 
 .contact-link .contact-img:hover {
   transform: scale(1.1);
+}
+
+.form-control {
+  width: 100%;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.form-control i {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+/* Error and Success */
+.form-control.success input {
+  border-color: #fcfdfc;
+}
+
+.form-control.error input {
+  border-color: #2a446b;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #fcfdfc;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #2a446b;
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #2a446b;
 }

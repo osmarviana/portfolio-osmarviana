@@ -96,19 +96,19 @@
                 />
               </div>
               <div class="img-content">
-                <h3 class="skill-name">Git</h3>
+                <h3 class="skill-name">Git/GitHub</h3>
                 <img
                   class="skill-img"
-                  alt="Ícone do Git"
-                  src="./src/img/hardSkills/gitIncon.png"
+                  alt="Ícone do Git e GitHub"
+                  src="./src/img/hardSkills/git-github.png"
                 />
               </div>
               <div class="img-content">
-                <h3 class="skill-name">GitHub</h3>
+                <h3 class="skill-name">TypeScript</h3>
                 <img
                   class="skill-img"
-                  src="./src/img/hardSkills/githubIcon.png"
-                  alt="Ícone do GitHub"
+                  src="./src/img/hardSkills/Typescript.png"
+                  alt="Ícone do TypeScript"
                 />
               </div>
             </div>
@@ -315,31 +315,31 @@
 
               <li class="project-li">
                 <div class="project-list">
-                  <a class="more-info">Projeto: DevFreela</a>
+                  <a class="more-info">Projeto: Hora do dia e clima</a>
                 </div>
                 <div class="more-info-box">
                   <p class="project-description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Necessitatibus quos esse earum impedit at aspernatur
-                    provident, eum delectus reiciendis debitis reprehenderit in
-                    totam autem facilis! Laborum optio veritatis eos ad!
+                    O projeto foi criado para praticar alguns conceitos básicos
+                    de JavaScript como variáveis, funções, eventos DOM, laços de
+                    repetição, estruturas condicionais e consumo de API.
+                    Consulte data, hora e clima de sua localidade.
                   </p>
                   <img
                     class="project-img"
-                    src="./src/img/projetos/devFreela.gif"
-                    alt="Gif da página do DevFreela"
+                    src="./src/img/projetos/hora-dia.gif"
+                    alt="Tela do projeto Hora dia."
                   />
                   <div class="btn-box">
                     <a
                       class="btn-01"
-                      href="https://github.com/osmarviana/devFreela"
+                      href="https://github.com/osmarviana/hora-dia"
                       target="_blank"
                     >
                       Ver projeto
                     </a>
                     <a
                       class="btn-02"
-                      href="https://osmarviana.github.io/devFreela/"
+                      href="https://osmarviana.github.io/hora-dia"
                       target="_blank"
                     >
                       Acessar deploy
@@ -355,31 +355,73 @@
         <h2 class="section-title">Contato</h2>
         <div class="contact-container">
           <div class="contact-form">
-            <form class="form">
+            <form
+              class="form"
+              id="form"
+              action="https://api.staticforms.xyz/submit"
+              method="post"
+            >
               <input
-                class="input"
-                type="text"
-                id="name"
-                placeholder="Seu nome"
+                type="hidden"
+                name="accessKey"
+                value="7e844b1a-a969-49b2-bb80-a33ec8da83c2"
               />
+
               <input
-                class="input"
-                type="email"
-                id="email"
-                placeholder="Seu email"
+                type="hidden"
+                name="redirectTo"
+                value="https://osmarviana.github.io/portifolio-osmarviana/"
               />
-              <input
-                class="input"
-                type="tel"
-                id="tel"
-                placeholder="Seu telefone"
-              />
-              <textarea
-                class="textarea"
-                name="message"
-                id="message"
-                placeholder="Sua mensagem"
-              ></textarea>
+              <div class="form-control">
+                <input
+                  class="input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Seu nome"
+                />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+              </div>
+
+              <div class="form-control">
+                <input
+                  class="input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Seu email"
+                />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+              </div>
+
+              <div class="form-control">
+                <input
+                  class="input"
+                  type="number"
+                  id="tel"
+                  name="phone"
+                  placeholder="Seu telefone"
+                />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+              </div>
+
+              <div class="form-control">
+                <textarea
+                  class="textarea"
+                  name="message"
+                  id="message"
+                  placeholder="Sua mensagem"
+                ></textarea>
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+              </div>
               <input class="input-btn" type="submit" value="Enviar" />
             </form>
           </div>
@@ -436,5 +478,6 @@
 
     <script src="./src/js/project-more-info.js"></script>
     <script src="./src/js/menu-responsive.js"></script>
+    <script src="./src/js/form-validation.js"></script>
   </body>
 </html>
