@@ -5,7 +5,7 @@ const tel = document.getElementById("tel");
 const message = document.getElementById("message");
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault();
+  // e.preventDefault();
 
   checkForm();
 });
@@ -44,15 +44,15 @@ function checkForm() {
     setSuccessFor(message);
   }
 
-  const formControls = form.querySelectorAll(".form-control");
+  // const formControls = form.querySelectorAll(".form-control");
 
-  const formIsValid = [...formControls].every((formControl) => {
-    return formControl.className === "form-control success";
-  });
+  // const formIsValid = [...formControls].every((formControl) => {
+  //   return formControl.className === "form-control success";
+  // });
 
-  if (formIsValid) {
-    alert("Formulário enviado com sucesso!");
-  }
+  // if (formIsValid) {
+  //   alert("Formulário enviado com sucesso!");
+  // }
 }
 
 function setErrorFor(input, message) {
