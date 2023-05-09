@@ -43,16 +43,6 @@ function checkForm() {
   } else {
     setSuccessFor(message);
   }
-
-  // const formControls = form.querySelectorAll(".form-control");
-
-  // const formIsValid = [...formControls].every((formControl) => {
-  //   return formControl.className === "form-control success";
-  // });
-
-  // if (formIsValid) {
-  //   alert("Formulário enviado com sucesso!");
-  // }
 }
 
 function setErrorFor(input, message) {
