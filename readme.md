@@ -1,6 +1,6 @@
-# Portifólio Osmar Viana
+# Portfolio Osmar Viana
 
-Portifólio criado para mostrar um pouco do meu conhecimento com programação front-end.
+Portfolio criado para mostrar um pouco do meu conhecimento com programação front-end.
 
 </br>
 
