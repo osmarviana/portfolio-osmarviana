@@ -24,7 +24,7 @@ Portfolio criado para mostrar um pouco do meu conhecimento com programação fro
 
 </br>
 
-## Ferramentas usadas
+## Tecnologias usadas
 
 - HTML
 - CSS
@@ -34,7 +34,7 @@ Portfolio criado para mostrar um pouco do meu conhecimento com programação fro
 
 ## Links
 
-https://osmarviana.github.io/portifolio-osmarviana
+https://osmarviana.github.io/portfolio-osmarviana/
 
 </br>
 
