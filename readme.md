@@ -1,6 +1,6 @@
-# Portifólio Osmar Viana
+# Portfolio Osmar Viana
 
-Portifólio criado para mostrar um pouco do meu conhecimento com programação front-end.
+Portfolio criado para mostrar um pouco do meu conhecimento com programação front-end.
 
 </br>
 
@@ -24,7 +24,7 @@ Portifólio criado para mostrar um pouco do meu conhecimento com programação f
 
 </br>
 
-## Ferramentas usadas
+## Tecnologias usadas
 
 - HTML
 - CSS
@@ -34,7 +34,7 @@ Portifólio criado para mostrar um pouco do meu conhecimento com programação f
 
 ## Links
 
-https://osmarviana.github.io/portifolio-osmarviana
+https://osmarviana.github.io/portfolio-osmarviana/
 
 </br>
 
